@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Find Your Next Read</h1>
+        <input type="text" id="searchBar" placeholder="Enter book title..." onkeyup="searchBooks()">
+    </header>
+
+    <section class="books-section">
+        <h2>Trending Books</h2>
+        <div class="book-list" id="bookList">
+            <!-- Books will be inserted dynamically using JavaScript -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

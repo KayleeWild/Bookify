@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    display: flex;
+    gap: 20px;
+}
+
+.book-cover {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+    flex: 1;
+}
+
+.rating {
+    background: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-now {
+    background: blue;
+    color: white;
+}
+
+.favorite {
+    background: gray;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#searchBar {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.books-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book-card {
+    width: 180px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.book-card a {
+    display: block;
+    background: #004aad;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
