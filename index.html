@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book List</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Book List</h1>
-    <ul id="book-list"></ul>
 
-    <script src="pulling.js"></script>
+    <header>
+        <h1>Find Your Next Read</h1>
+        <input type="text" id="searchBar" placeholder="Enter book title..." onkeyup="searchBooks()">
+    </header>
+
+    <section class="books-section">
+        <h2>Trending Books</h2>
+        <div class="book-list" id="bookList">
+            <!-- Books will be inserted dynamically using JavaScript -->
+        </div>
+    </section>
+
+    <button onclick="window.location.href='favorites.html'">View My Favorites</button>
+    
+    <script src="script.js"></script>
 </body>
 </html>

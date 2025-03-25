@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Favorite Books</h1>
+        <button onclick="loadFavorites()">Load Favorites</button>
+    </header>
+
+    <section class="books-section">
+        <div class="book-list" id="favoriteList"></div>
+    </section>
+
+    <script>
+        function loadFavorites() {
+            fetch('/api/favorites')
+                .then(response => response.json())
+                .then(favorites => {
+                    const favoriteList = document.getElementById("favoriteList");
+                    favoriteList.innerHTML = "";
+                    favorites.forEach(book => {
+                        const bookCard = document.createElement("div");
+                        bookCard.classList.add("book-card");
+                        bookCard.innerHTML = `
+                            <h3>${book.title}</h3>
+                            <p>${book.author}</p>
+                        `;
+                        favoriteList.appendChild(bookCard);
+                    });
+                });
+        }
+    </script>
+</body>
+</html>
